@@ -14,9 +14,7 @@ public class CVSClinicLocatorPage extends CVSBasePage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String cliniclocatorpage() {
-		
-		
+	public String cliniclocatorpage() {		
 	List<WebElement> elements = driver.findElements(By.xpath("//div[@class='address-information']//descendant::div[3]"));
 	
 		for (WebElement Element: elements) {
@@ -27,6 +25,17 @@ public class CVSClinicLocatorPage extends CVSBasePage {
 		}
 		return null;	
 	}
+	
+	/*
+	 * public boolean hasMatchingLocationInTheArea(String addressZipCode) {
+	 * List<WebElement> elements =
+	 * driver.findElements(By.className("map-list-item"));
+	 * 
+	 * for (WebElement element: elements) { if
+	 * (element.getText().contains(addressZipCode)){ return true; } } return false;
+	 * }
+	 */
+	
 	
 	public void clinicpageAssertion() {
 		String Expected = "Clinic locator";
@@ -40,7 +49,7 @@ public class CVSClinicLocatorPage extends CVSBasePage {
 		} catch (Throwable t) {
 			System.out.println("Clinic Locator Page Assertion Unsuccessful");
 		}
-		
+	
 	}
 
 }

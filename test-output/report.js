@@ -53,7 +53,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 6704241800,
+  "duration": 7066088699,
   "status": "passed"
 });
 formatter.scenario({
@@ -86,7 +86,7 @@ formatter.match({
   "location": "FindaClinic.user_is_already_on_the_cvs_pharmacy_minute_clinic_page()"
 });
 formatter.result({
-  "duration": 3594548400,
+  "duration": 4916237099,
   "status": "passed"
 });
 formatter.match({
@@ -99,18 +99,18 @@ formatter.match({
   "location": "FindaClinic.user_enters_their(String)"
 });
 formatter.result({
-  "duration": 2544994300,
-  "status": "passed"
+  "duration": 418542201,
+  "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy17.sendKeys(Unknown Source)\r\n\tat page.MinuteClinicPage.Typezipcode(MinuteClinicPage.java:35)\r\n\tat steps.FindaClinic.user_enters_their(FindaClinic.java:36)\r\n\tat ✽.When user enters their \"76210\"(MinuteClinic.feature:6)\r\n",
+  "status": "failed"
 });
 formatter.match({
-  "location": "FindaClinic.user_should_be_able_to_get_the_locations_of_the_minute_clinic_within_his_zip_code()"
+  "location": "FindaClinic.validateTheListedZipCodes()"
 });
 formatter.result({
-  "duration": 3163826400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.after({
-  "duration": 15600,
+  "duration": 41400,
   "status": "passed"
 });
 });
