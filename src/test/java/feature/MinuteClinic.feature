@@ -1,4 +1,4 @@
-Feature: User should be able to find the nearby Minute Clinic with the help of zipcode.
+Feature: As a User I want to find the nearby Minute Clinic with the help of zipcode.
 
 Scenario Outline: User should be able to find the nearby Minute Clinic.
 

@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 public class CVSClinicLocatorPage extends CVSBasePage {	
 	
@@ -44,7 +43,7 @@ public class CVSClinicLocatorPage extends CVSBasePage {
 		
 		
 		try {
-		Assert.assertEquals(Actual, Expected);
+		org.junit.Assert.assertEquals(Actual, Expected);
 		System.out.println("Clinic Locator Page Assertion Successful");
 		} catch (Throwable t) {
 			System.out.println("Clinic Locator Page Assertion Unsuccessful");

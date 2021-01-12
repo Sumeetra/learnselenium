@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("MinuteClinic.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/Hamro/git/TESTBDDCVS/BDDWithCucumberforCVS/src/test/java/feature/MinuteClinic.feature");
 formatter.feature({
   "line": 1,
   "name": "User should be able to find the nearby Minute Clinic with the help of zipcode.",
@@ -52,10 +52,6 @@ formatter.examples({
   ],
   "keyword": "Examples"
 });
-formatter.before({
-  "duration": 7066088699,
-  "status": "passed"
-});
 formatter.scenario({
   "line": 11,
   "name": "User should be able to find the nearby Minute Clinic.",
@@ -82,35 +78,16 @@ formatter.step({
   "name": "user should be able to get the locations of the minute clinic within his zip code.",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "FindaClinic.user_is_already_on_the_cvs_pharmacy_minute_clinic_page()"
-});
+formatter.match({});
 formatter.result({
-  "duration": 4916237099,
-  "status": "passed"
+  "status": "undefined"
 });
-formatter.match({
-  "arguments": [
-    {
-      "val": "76210",
-      "offset": 19
-    }
-  ],
-  "location": "FindaClinic.user_enters_their(String)"
-});
+formatter.match({});
 formatter.result({
-  "duration": 418542201,
-  "error_message": "java.lang.NullPointerException\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy17.sendKeys(Unknown Source)\r\n\tat page.MinuteClinicPage.Typezipcode(MinuteClinicPage.java:35)\r\n\tat steps.FindaClinic.user_enters_their(FindaClinic.java:36)\r\n\tat ✽.When user enters their \"76210\"(MinuteClinic.feature:6)\r\n",
-  "status": "failed"
+  "status": "undefined"
 });
-formatter.match({
-  "location": "FindaClinic.validateTheListedZipCodes()"
-});
+formatter.match({});
 formatter.result({
-  "status": "skipped"
-});
-formatter.after({
-  "duration": 41400,
-  "status": "passed"
+  "status": "undefined"
 });
 });
